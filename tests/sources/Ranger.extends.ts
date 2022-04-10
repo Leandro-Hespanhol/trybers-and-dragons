@@ -1,4 +1,4 @@
-import Archetype, { Ranger } from '../../src/Archetypes';
+import Archetype, { Ranger } from '../../src/Archetype';
 
 const x = (y: Archetype) => {
 

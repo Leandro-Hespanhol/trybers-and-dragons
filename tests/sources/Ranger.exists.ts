@@ -1,2 +1,2 @@
-import * as Archetypes from '../../src/Archetypes';
+import * as Archetypes from '../../src/Archetype';
 const ranger = new Archetypes.Ranger('');

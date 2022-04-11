@@ -1,3 +1,3 @@
-import Archetype from '../../src/Archetype';
+import Archetype from '../../src/Archetypes';
 
 const r = new Archetype('', 99);

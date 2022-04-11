@@ -1,4 +1,4 @@
-import Archetype from '../../src/Archetype';
+import Archetype from '../../src/Archetypes';
 
 class ArchetypeChild extends Archetype {
   private $energyType: 'mana' = 'mana';

@@ -1,3 +1,3 @@
-import * as Archetypes from '../../src/Archetype';
+import * as Archetypes from '../../src/Archetypes';
 const necromancer = new Archetypes.Necromancer('');
 const result = () => necromancer.energyType;

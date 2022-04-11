@@ -113,14 +113,3 @@ export default class Character implements Fighter, SimpleFighter {
     inimigo.lifePoints -= this._strength;
   }
 }
-
-// const personagem = new Character('zeze');
-// console.log('log1', personagem);
-// personagem.amount += 5;
-// personagem.levelUp();
-// console.log('log2', personagem);
-// personagem.amount += 280;
-// personagem.levelUp();
-// console.log('log3', personagem);
-// personagem.levelUp();
-// console.log('log4', personagem);

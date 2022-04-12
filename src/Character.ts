@@ -1,8 +1,8 @@
-import Archetype from './Archetypes';
+import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Fighter from './Fighter';
 import SimpleFighter from './Fighter/SimpleFighter';
-import Race from './Races';
+import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
 export default class Character implements Fighter, SimpleFighter {
@@ -15,18 +15,24 @@ export default class Character implements Fighter, SimpleFighter {
   protected _defense: number;
   protected _dexterity: number;
   protected _energy: Energy;
-  constructor(name: string) {
+  constructor(
+    name: string,
+    race: Race = new Elf('Elf', 10),
+    archetype: Archetype = new Mage('Jaina'),
+  ) {
     this.name = name;
-    this._race = { 
-      name: 'Elf',
-      dexterity: 10,
-      maxLifePoints: 99 };
+    this._race = race;
+    //  { 
+    //   name: 'Elf',
+    //   dexterity: 10,
+    //   maxLifePoints: 99 };
 
-    this._archetype = {
-      name: 'Mage',
-      special: 0,
-      cost: 0,
-    };
+    this._archetype = archetype;
+    // {
+    //   name: 'Mage',
+    //   special: 0,
+    //   cost: 0,
+    // };
 
     this._maxLifePoints = this.maxLifePointsPerRace() / 2;
     this._lifePoints = this._maxLifePoints;

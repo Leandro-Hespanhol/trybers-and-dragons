@@ -8,6 +8,8 @@ const result = () => {
   const player1 = new Character('');
   for (let i = 0; i < 500; i++) player1.levelUp();
   const monster = new Monster();
+  console.log('11 PVE LSP', player1);
+  console.log('11 PVE LSP', monster);
   const pve1 = new PVE(player1, [monster]);
 
   const player2 = new Character('');

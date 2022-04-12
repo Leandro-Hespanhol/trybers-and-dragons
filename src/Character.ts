@@ -49,10 +49,7 @@ export default class Character implements Fighter, SimpleFighter {
   get defense(): number { return this._defense; }
   get dexterity(): number { return this._dexterity; }
   get energy(): Energy { 
-    return {
-      type_: this._energy.type_,
-      amount: this._energy.amount,
-    };
+    return { ...this._energy };
   }
 
   private maxLifePointsPerRace(): number {

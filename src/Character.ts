@@ -58,7 +58,7 @@ export default class Character implements Fighter, SimpleFighter {
         return 80;        
       case 'Elf':
         return 99;        
-      case 'Hafling':
+      case 'Halfling':
         return 60;        
       case 'Orc':
         return 74;        

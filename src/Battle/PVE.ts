@@ -25,7 +25,7 @@ export default class PVE extends Battle {
         monster.attack(this._player);
         if (this._player.lifePoints <= 0) {
           winner = -1;
-          return -1;
+          break;
         }
       }
       return winner;
